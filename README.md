@@ -38,8 +38,7 @@ Telegram: http://t.me/AbirHasan2005
 ### Blog: https://teletechstore.blogspot.com
 
 ## Codings:
-```
-#!/bin/bash
+```#!/bin/bash
 # This is an alternative of Andronix App
 # Please don't use any codes from here without giving me credits
 # Github: https://github.com/AbirHasan2005/Deskify
