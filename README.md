@@ -27,10 +27,12 @@ This is in BETA. So it is not fully complete and there are so mistakes in coding
 ### Join Telegram Group(http://t.me/linux_repo) for feedback and chat.
 
 ## Social Sites:
+```
 Twitter: https://twitter.com/AbirHasan2005
 Instagram: https://instagram.com/AbirHasan2005
 Facebook: https://facebook.com/AbirHasan2005
 GitHub: https://github.com/AbirHasan2005
 Telegram: http://t.me/AbirHasan2005
+```
 
 ### Blog: https://teletechstore.blogspot.com
