@@ -20,6 +20,9 @@ If you created a desktop environment than you can use VNC Viewer and have fun ;)
 2. Kali Linux
 3. Debain
 4. Arch Linux (NOTE: This will need a high-end device)
+
+![Screenshot](https://github.com/AbirHasan2005/Deskify/blob/master/captured.jpg)
+
 ### Manjaro, Fedora, Void, Alpine and WindowsOS coming soon!
 
 This is in BETA. So it is not fully complete and there are so mistakes in coding. So if you find any issues than feedback at my Telegram Group. I will try my best to fix everything.
