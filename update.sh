@@ -17,10 +17,11 @@ sleep 1.5
 cd ..
 rm -rf Deskify
 git clone https://github.com/AbirHasan2005/Deskify
-cd CoronaStats
+cd Deskify
 chmod +x deskify.sh
 printf "\n\e[1;92mRestarting ...\n\e[0m"
 bash deskify.sh
+cd ..
 
 }
 

@@ -1,6 +1,7 @@
 #!/bin/bash
 # This is an alternative of Andronix App
 # Please don't use any codes from here without giving me credits
+# For chat join my Telegram Group: http://t.me/linux_repo
 # Github: https://github.com/AbirHasan2005/Deskify
 # Read README.md file
 # All links from AndronixApp
@@ -14,7 +15,7 @@ menu() {
 printf "\n\n\e[1;92m"
 printf "	░█▀▄░█▀▀░█▀▀░█░█░▀█▀░█▀▀░█░█\n"
 printf "	░█░█░█▀▀░▀▀█░█▀▄░░█░░█▀▀░░█░\n"
-printf "	░▀▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░░░░▀░ \e[1;95mv1.8-BETA\n"
+printf "	░▀▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░░░░▀░ \e[1;95mv2.1-BETA\n"
 printf "	     \e[1;93mby \e[1;94m@AbirHasan2005\n\n"
 printf "\e[1;92m[\e[1;93m00\e[1;92m] Exit\n"
 printf "\e[1;92m[\e[1;93m01\e[1;92m] Ubuntu		[\e[1;93m02\e[1;92m] Kali Linux\n"
@@ -258,8 +259,46 @@ sleep 1
 fi
 
 elif [[ $option == 5 || $option == 05 ]]; then
-printf "\n\e[1;91mThis Script is not fully ready ...\n@AbirHasan2005 will add \e[1;92mManjaro\e[1;91m soon ...\n\e[1;92mJoin Telegram Group (\e[1;96mhttp://t.me/linux_repo\e[1;92m) for feedback and chat ...\n"
-menu
+printf "\n\n\e[1;92mManjaro is an accessible, friendly, open-source\nLinux distribution and community. Based on Arch\nLinux, providing all the benefits of cutting-edge software\ncombined with a focus on getting started quickly,\nautomated tools to require less manual intervention,\nand help readily available when needed.\nManjaro is suitable for both newcomers and\nexperienced Linux users.\n"
+printf "\n\e[1;92m[\e[1;93m01\e[1;92m] Install          \e[1;92m[\e[1;93m02\e[1;92m] Uninstall\n"
+read -p $'\n\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[1;93m Choose an option: \e[1;92m' optionl
+
+if [[ $optionl == 1 || $optionl == 01 ]]; then
+printf "\n\n\e[1;92mIt will download huge files ...\n"
+sleep 1
+printf "Need space up to 4GB in Internal Storage ...\n"
+sleep 1
+printf "Please keep patiences ...\n"
+sleep 1
+printf "\nInstalling ...\n"
+sleep 3
+read -p $'\n\nWhich Desktop Environment you want?\n\n\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m] XFCE  \e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m] LXDE  \e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m] LXQT  \e[1;92m[\e[0m\e[1;77m04\e[0m\e[1;92m] Non-DE\n\n\e[1;93m Choose an option: \e[1;92m' optionm
+
+if [[ $optionm == 1 || $optionm == 01 ]]; then
+pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Manjaro/manjaro-xfce.sh && chmod +x manjaro-xfce.sh && bash manjaro-xfce.sh
+
+elif [[ $optionm == 2 || $optionm == 02 ]]; then
+pkg update -y && pkg install wget curl proot tar -y  && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Manjaro/manjaro-lxde.sh && chmod +x manjaro-lxde.sh && bash manjaro-lxde.sh
+
+elif [[ $optionm == 3 || $optionm == 03 ]]; then
+pkg update -y && pkg install wget curl proot tar -y  && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Manjaro/manjaro-lxqt.sh && chmod +x manjaro-lxqt.sh && bash manjaro-lxqt.sh
+
+elif [[ $optionm == 4 || $optionm == 04 ]]; then
+pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Manjaro/manjaro.sh && chmod +x manjaro.sh && bash manjaro.sh
+
+else # For Optionm
+printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
+sleep 1
+fi
+
+elif [[ $optionl == 2 || $optionl == 02 ]]; then
+printf "\e[1;92m\nUninstalling ...\n\e[0m" # Uninstall not placed
+
+
+else # For Optionl
+printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
+sleep 1
+fi
 
 elif [[ $option == 6 || $option == 06 ]]; then
 printf "\n\e[1;91mThis Script is not fully ready ...\n@AbirHasan2005 will add \e[1;92mFedora\e[1;91m soon ...\n\e[1;92mJoin Telegram Group (\e[1;96mhttp://t.me/linux_repo\e[1;92m) for feedback and chat ...\n"
