@@ -23,6 +23,7 @@ If you created a desktop environment than you can use VNC Viewer and have fun ;)
 5. Manjaro 
 ### Fedora, Void, Alpine and WindowsOS coming soon!
 
+![Screenshot](https://github.com/AbirHasan2005/Deskify/captured.jpg
 This is in BETA. So it is not fully complete and there are so mistakes in coding. So if you find any issues than feedback at my Telegram Group. I will try my best to fix everything. Must Update daily via update.sh script.
 ```
 chmod +x update.sh
