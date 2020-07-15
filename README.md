@@ -20,8 +20,9 @@ If you created a desktop environment than you can use VNC Viewer and have fun ;)
 2. Kali Linux 
 3. Debain 
 4. Arch Linux (NOTE: This will need a high-end device) 
-5. Manjaro 
-### Fedora, Void, Alpine and WindowsOS coming soon!
+5. Manjaro
+6. Windows 7
+### Fedora, Void, Alpine and more WindowsOS coming soon!
 
 This is in Development. So it is not fully complete and there are mistakes in coding. So if you find any issues than feedback at my Telegram Group. I will try my best to fix everything. Must check releases weekly from https://github.com/AbirHasan2005/releases
 
@@ -46,3 +47,5 @@ GitHub: https://github.com/AbirHasan2005
 Telegram: http://t.me/AbirHasan2005
 
 ### Blog: https://teletechstore.blogspot.com
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/AbirHasan2005)
