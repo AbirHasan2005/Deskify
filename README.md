@@ -24,7 +24,7 @@ If you created a desktop environment than you can use VNC Viewer and have fun ;)
 6. Windows 7
 ### Fedora, Void, Alpine and more WindowsOS coming soon!
 
-This is in Development. So it is not fully complete and there are mistakes in coding. So if you find any issues than feedback at my Telegram Group. I will try my best to fix everything. Must check releases weekly from https://github.com/AbirHasan2005/releases
+This is in Development. So it is not fully complete and there are mistakes in coding. So if you find any issues than feedback at my Telegram Group. I will try my best to fix everything. Must check releases weekly from https://github.com/AbirHasan2005/Deskify
 
 ## What's New:
 - Version 2.6-Stable
