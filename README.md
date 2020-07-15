@@ -1,6 +1,8 @@
 # Deskify v2.6-Stable
 Deskify is an alternative of Andronix App. Get Linux Distributions in Android's Termux App. Also you will get Desktop environments using VNC Viewer. It is an automation. Links from AndronixApp.
 
+![Screenshot](https://github.com/AbirHasan2005/Deskify/blog/master/capture.png)
+
 ## How to use:
 1. Download Termux and VNC Viewer from Google Play Store.
 
