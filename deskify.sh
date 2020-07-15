@@ -337,7 +337,7 @@ sleep 3
 apt update && apt upgrade -y && pkg install qemu-system-i386-headless wget -y && wget http://www.mediafire.com/file/7qkyc74y7igrjrr/Windows_7.qcow2
 printf "\n\n\e[1;92mVNC Server Starting ...\nOpen VNC Viewer and add new connection type address '127.0.0.1:1' give the name the to machine like 'Windows 7' and click on create and then on connect. After connection enjoys the system.\n\n"
 qemu-system-i386 -hda Windows_7.qcow2 -vnc 127.0.0.1:1
-printf "\n\n\e[1;92m Next time if you want to start WIndows 7 just give the below command:\n\n   qemu-system-i386 -hda ~/Windows_7.qcow2 -vnc 127.0.0.1:1"
+printf "\n\n\e[1;92m Next time if you want to start WIndows 7 just give the below command:\n\n   qemu-system-i386 -hda Deskify/Windows_7.qcow2 -vnc 127.0.0.1:1"
 sleep 4
 printf "For more help ask at Telegram Group: \e[1;96mhttp://t.me/linux_repo\e[1;92m\n\n"
 sleep 2
