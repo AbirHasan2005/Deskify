@@ -1,4 +1,4 @@
-# Deskify v2.1-BETA
+# Deskify v2.6-Stable
 Deskify is an alternative of Andronix App. Get Linux Distributions in Android's Termux App. Also you will get Desktop environments using VNC Viewer. It is an automation. Links from AndronixApp.
 
 ## How to use:
@@ -23,18 +23,18 @@ If you created a desktop environment than you can use VNC Viewer and have fun ;)
 5. Manjaro 
 ### Fedora, Void, Alpine and WindowsOS coming soon!
 
-![Screenshot](https://github.com/AbirHasan2005/Deskify/blob/master/captured.jpg)
-This is in BETA. So it is not fully complete and there are so mistakes in coding. So if you find any issues than feedback at my Telegram Group. I will try my best to fix everything. Must Update daily via update.sh script.
-```
-chmod +x update.sh
-bash update.sh
-```
+This is in Development. So it is not fully complete and there are mistakes in coding. So if you find any issues than feedback at my Telegram Group. I will try my best to fix everything. Must check releases weekly from https://github.com/AbirHasan2005/releases
 
 ## What's New:
-1. Version 2.1-BETA 
-2. Added Manjaro 
-3. Bugs cleared 
-4. Update script improved
+- Version 2.6-Stable
+- Added Manjaro
+- Added Windows 7
+- Added Tutorials option
+- Bugs cleared 
+- Text improvements
+- Animations improved
+
+New Release coming soon!
 
 ### Join Telegram Group(http://t.me/linux_repo) for feedback and chat.
 
@@ -46,5 +46,3 @@ GitHub: https://github.com/AbirHasan2005
 Telegram: http://t.me/AbirHasan2005
 
 ### Blog: https://teletechstore.blogspot.com
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/AbirHasan2005?locale.x=en_US)

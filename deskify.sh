@@ -8,20 +8,22 @@
 
 
 clear
-printf "\n\e[0;91m>>>Please read \e[1;91mREADME.md\e[0;91m file before using this\n\e[0m"
+printf "\n\e[0;91m>>>Please read \e[1;91mREADME.md\e[0;91m file before using this tool<<<\n\e[0m"
 
 menu() {
 
 printf "\n\n\e[1;92m"
 printf "	░█▀▄░█▀▀░█▀▀░█░█░▀█▀░█▀▀░█░█\n"
 printf "	░█░█░█▀▀░▀▀█░█▀▄░░█░░█▀▀░░█░\n"
-printf "	░▀▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░░░░▀░ \e[1;95mv2.1-BETA\n"
+printf "	░▀▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░░░░▀░ \e[1;95mv2.6-Stable\n"
 printf "	     \e[1;93mby \e[1;94m@AbirHasan2005\n\n"
+printf "\e[1;92m Choose which Environment you want to install or uninstall from below:\n\n"
 printf "\e[1;92m[\e[1;93m00\e[1;92m] Exit\n"
 printf "\e[1;92m[\e[1;93m01\e[1;92m] Ubuntu		[\e[1;93m02\e[1;92m] Kali Linux\n"
 printf "\e[1;92m[\e[1;93m03\e[1;92m] Debian             [\e[1;93m04\e[1;92m] Arch Linux\n"
 printf "\e[1;92m[\e[1;93m05\e[1;92m] Manjaro            [\e[1;93m06\e[1;92m] Fedora\n"
 printf "\e[1;92m[\e[1;93m07\e[1;92m] Void               [\e[1;93m08\e[1;92m] Alpine\n"
+printf "\e[1;92m[\e[1;93m09\e[1;92m] Windows 7(BETA)    [\e[1;93m10\e[1;92m] Tutorials\n"
 read -p $'\n\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[1;93m Choose an option: \e[1;92m' option
 
 if [[ $option == 1 || $option == 01 ]]; then #option
@@ -113,10 +115,12 @@ read -p $'\n\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[1;93m Choose an option: \e
 
 if [[ $optiond == 1 || $optiond == 01 ]]; then
 printf "\n\n\e[1;92mUninstalling ...\n\e[0m"
+sleep 3
 pkg install wget -y && wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Uninstall/Ubuntu/UNI-ubuntu.sh && bash UNI-ubuntu.sh
 
 elif [[ $optiond == 2 || $optiond == 02 ]]; then
 printf "\n\n\e[1;92mUninstalling ...\n\e[0m"
+sleep 3
 pkg install wget -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Uninstall/Ubuntu19/UNI-ubuntu19.sh && chmod +x UNI-ubuntu19.sh && ./UNI-ubuntu19.sh
 
 else # For Optiond
@@ -168,6 +172,7 @@ fi
 
 elif [[ $optione == 2 || $optione == 02 ]]; then
 printf "\n\n\e[1;92mUninstalling ...\n\e[0m"
+sleep 3
 wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Uninstall/Kali/UNI-kali.sh && bash UNI-kali.sh
 
 else # For Optione
@@ -212,6 +217,7 @@ fi
 
 elif [[ $optionh == 2 || $optionh == 02 ]]; then
 printf "\e[1;92m\nUninstalling ...\n\e[0m"
+sleep 3
 wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Uninstall/Debian/UNI-debian.sh && bash UNI-debian.sh
 
 else # For Optionh
@@ -251,6 +257,7 @@ fi
 
 elif [[ $optionj == 2 || $optionj == 02 ]]; then
 printf "\e[1;92m\nUninstalling ...\n\e[0m"
+sleep 3
 wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Uninstall/Arch/UNI-arch.sh && bash UNI-arch.sh
 
 else # For Optionj
@@ -259,7 +266,7 @@ sleep 1
 fi
 
 elif [[ $option == 5 || $option == 05 ]]; then
-printf "\n\n\e[1;92mManjaro is an accessible, friendly, open-source\nLinux distribution and community. Based on Arch\nLinux, providing all the benefits of cutting-edge software\ncombined with a focus on getting started quickly,\nautomated tools to require less manual intervention,\nand help readily available when needed.\nManjaro is suitable for both newcomers and\nexperienced Linux users.\n"
+printf "\n\n\e[1;92mManjaro is an accessible, friendly, open-source\nLinux distribution and community. Based\non Arch Linux, providing all the benefits of\mcutting-edge software combined with a focus\non getting started quickly, automated tools\nto require less manual intervention, and help\nreadily available when needed. Manjaro is\nsuitable for both newcomers and experienced\nLinux users.\n"
 printf "\n\e[1;92m[\e[1;93m01\e[1;92m] Install          \e[1;92m[\e[1;93m02\e[1;92m] Uninstall\n"
 read -p $'\n\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[1;93m Choose an option: \e[1;92m' optionl
 
@@ -292,8 +299,9 @@ sleep 1
 fi
 
 elif [[ $optionl == 2 || $optionl == 02 ]]; then
-printf "\e[1;92m\nUninstalling ...\n\e[0m" # Uninstall not placed
-
+printf "\e[1;92m\nUninstalling ...\n\e[0m" 
+sleep 3
+wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Uninstall/Manjaro/UNI-manjaro.sh && bash UNI-manjaro.sh
 
 else # For Optionl
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -310,6 +318,41 @@ menu
 
 elif [[ $option == 8 || $option == 08 ]]; then
 printf "\n\e[1;91mThis Script is not fully ready ...\n@AbirHasan2005 will add \e[1;92mAlpine\e[1;91m soon ...\n\e[1;92mJoin Telegram Group (\e[1;96mhttp://t.me/linux_repo\e[1;92m) for feedback and chat ...\n"
+menu
+
+elif [[ $option == 9 || $option == 09 ]]; then
+prinft "\n\n\e[1;92mWindows 7 is an operating system that was produced by Microsoft and released as part of the Windows NT family of operating\nsystems. It was released to manufacturing on July 22, 2009, and became generally available on October 22, that year,[9] and is\nthe operating system for use on personal computers, including home and business desktops, laptops, tablet PCs and media center\nPCs. It is the successor to Windows Vista, released two years prior. Windows 7's server counterpart, Windows Server 2008 R2,\nwas released at the same time. The last supported version of Windows was released on July 1, 2011, entitled Windows Embedded\nPOSReady 7. Microsoft ended mainstream support for Windows 7 and Windows Server 2008 R2 on January 13, 2015 and extended\nsupport ended on January 14, 2020.[10] At the end of January, same year, Microsoft had ended support for websites on Internet\nExplorer 11. IE11 is only supported on Windows Server 2012[11][12] and Windows Embedded 8 Standard.[13]\n\nWindows 7 was primarily intended to be an incremental upgrade to Microsoft Windows, addressing Windows Vista's poor critical\nreception while maintaining hardware and software compatibility. Windows 7 continued improvements on Windows Aero (the user\ninterface introduced in Windows Vista) with the addition of a redesigned taskbar that allows applications to be 'pinned' to\nit, and new window management features. Other new features were added to the operating system, including libraries, the new\nfile sharing system HomeGroup, and support for multitouch input. A new 'Action Center' interface was also added to provide an\noverview of system security and maintenance information, and tweaks were made to the User Account Control system to make it\nless intrusive. Windows 7 also shipped with updated versions of several stock applications, including Internet Explorer 8,\nWindows Media Player, and Windows Media Center.\n\nIn contrast to Windows Vista, Windows 7 was generally praised by critics, who considered the operating system to be a major\nimprovement over its predecessor due to its increased performance, its more intuitive interface (with particular praise\ndevoted to the new taskbar), fewer User Account Control popups, and other improvements made across the platform. Windows 7 was\na major success for Microsoft; even prior to its official release, pre-order sales for the operating system on the online\na major success for Microsoft; even prior to its official release, pre-order sales for the operating system on the online retailer Amazon.com had surpassed previous records. In just six months, over 100 million copies had been sold worldwide,\nincreasing to over 630 million licenses by July 2012. As of July 2020, 19.79% of traditional PCs running Windows are running\nWindows 7 (and thus 15% of all traditional PCs or 7.2% of all devices across platforms),[14] which still has high (even over\n50%[15]) market share in some countries, such as Turkmenistan and Venezuela.\n"
+printf "\n\e[1;92m[\e[1;93m01\e[1;92m] Install          \e[1;92m[\e[1;93m02\e[1;92m] Uninstall\n"
+read -p $'\n\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[1;93m Choose an option: \e[1;92m' optionn
+
+if [[ $optionn == 1 || $optionn == 01 ]]; then
+printf "\n\n\e[1;92mIt will download huge files ...\n"
+sleep 1
+printf "Need space up to 4GB in Internal Storage ...\n"
+sleep 1
+printf "Please keep patiences ...\n"
+sleep 1
+printf "\nInstalling ...\n"
+sleep 3
+apt update && apt upgrade -y && pkg install qemu-system-i386-headless wget -y && wget http://www.mediafire.com/file/7qkyc74y7igrjrr/Windows_7.qcow2 && qemu-system-i386 -hda Windows_7.qcow2 -vnc 127.0.0.1:1
+printf "\n\n\e[1;92mVNC Server Started!\nOpen VNC Viewer and add new connection type address '127.0.0.1:1' give the name the to machine like 'Windows 7' and click on create and then on connect. After connection enjoys the system.\n\n"
+sleep 4
+printf "For more help ask at Telegram Group: \e[1;96mhttp://t.me/linux_repo\e[1;92m\n\n"
+sleep 2
+
+elif [[ $optionn == 2 || $optionn == 02 ]]; then
+printf "\e[1;92m\nUninstalling ...\n\e[0m"
+sleep 2
+rm -rf Windows_7.qcow2
+
+else # For Optionn
+printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
+sleep 1
+fi
+
+elif [[ $option == 10 ]]; then
+printf "\n\n\e[1;92m All tutorials, help, details and supports in Telegram Group: \e[1;96mhttp://t.me/linux_repo\e[1;92m\n"
+sleep 5
 menu
 
 elif [[ $option == 0 || $option == 00 ]]; then
