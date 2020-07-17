@@ -1,4 +1,4 @@
-# Deskify v2.6-Stable
+# Deskify v2.8-Stable
 Deskify is an alternative of Andronix App. Get Linux Distributions in Android's Termux App. Also you will get Desktop environments using VNC Viewer. It is an automation. Links from AndronixApp.
 
 ![Screenshot](https://github.com/AbirHasan2005/Deskify/blob/master/capture.png)
@@ -29,9 +29,8 @@ If you created a desktop environment than you can use VNC Viewer and have fun ;)
 This is in Development. So it is not fully complete and there are mistakes in coding. So if you find any issues than feedback at my Telegram Group. I will try my best to fix everything. Must check releases weekly from https://github.com/AbirHasan2005/Deskify
 
 ## What's New:
-- Version 2.6-Stable
-- Added Manjaro
-- Added Windows 7
+- Version 2.8-Stable
+- Added Snake Game
 - Added Tutorials option
 - Bugs cleared 
 - Text improvements
