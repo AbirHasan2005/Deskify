@@ -10,15 +10,28 @@
 clear
 printf "\n\e[0;91m>>>Please read \e[1;91mREADME.md\e[0;91m file before using this tool<<<\n\e[0m"
 
-menu() {
+banner2() {
+
+printf "\n\e[1;95m░█▀█░█▀▄░▀█▀░█▀▄░█░█░█▀█░█▀▀░█▀█░█▀█░▀▀▄░▄▀▄░▄▀▄░█▀▀\n"
+printf "░█▀█░█▀▄░░█░░█▀▄░█▀█░█▀█░▀▀█░█▀█░█░█░▄▀░░█/█░█/█░▀▀▄\n"
+printf "░▀░▀░▀▀░░▀▀▀░▀░▀░▀░▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀▀▀░░▀░░░▀░░▀▀░\n"
+
+}
+
+banner() {
 
 printf "\n\n\e[1;92m"
 printf "	░█▀▄░█▀▀░█▀▀░█░█░▀█▀░█▀▀░█░█\n"
 printf "	░█░█░█▀▀░▀▀█░█▀▄░░█░░█▀▀░░█░\n"
-printf "	░▀▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░░░░▀░ \e[1;95mv2.6-Stable\n"
+printf "	░▀▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░░░░▀░ \e[1;95mv2.7-Stable\n"
 printf "	     \e[1;93mby \e[1;94m@AbirHasan2005\n\n"
-printf "\e[1;92m Choose which Environment you want to install or uninstall from below:\n\n"
-printf "\e[1;92m[\e[1;93m00\e[1;92m] Exit\n"
+
+}
+
+menu() {
+
+printf "\n\e[1;92m Choose which Environment you want to install or uninstall from below:\n\n"
+printf "\e[1;92m[\e[1;93m00\e[1;92m] Exit               [\e[1;93mNS\e[1;92m] Snake Game\n"
 printf "\e[1;92m[\e[1;93m01\e[1;92m] Ubuntu		[\e[1;93m02\e[1;92m] Kali Linux\n"
 printf "\e[1;92m[\e[1;93m03\e[1;92m] Debian             [\e[1;93m04\e[1;92m] Arch Linux\n"
 printf "\e[1;92m[\e[1;93m05\e[1;92m] Manjaro            [\e[1;93m06\e[1;92m] Fedora\n"
@@ -57,15 +70,31 @@ read -p $'\n\nWhich Desktop Environment you want?\n\n\e[1;92m[\e[0m\e[1;77m01\e[
 
 if [[ $optionc == 1 || $optionc == 01 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu19-xfce.sh && chmod +x ubuntu19-xfce.sh && bash ubuntu19-xfce.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optionc == 2 || $optionc == 02 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu19/ubuntu19-lxqt.sh && chmod +x ubuntu19-lxqt.sh && bash ubuntu19-lxqt.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optionc == 3 || $optionc == 03 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu19/ubuntu19-lxde.sh && chmod +x ubuntu19-lxde.sh && bash ubuntu19-lxde.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optionc == 4 || $optionc == 04 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Rootfs/Ubuntu19/ubuntu19.sh && chmod +x ubuntu19.sh && bash ubuntu19.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 else
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -87,15 +116,31 @@ read -p $'\n\nWhich Desktop Environment you want?\n\n\e[1;92m[\e[0m\e[1;77m01\e[
 
 if [[ $optiong == 1 || $optiong == 01 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu/ubuntu-xfce.sh && chmod +x ubuntu-xfce.sh && bash ubuntu-xfce.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optiong == 2 || $optiong == 02 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu/ubuntu-lxde.sh && chmod +x ubuntu-lxde.sh && bash ubuntu-lxde.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optiong == 3 || $optong == 03 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu/ubuntu-lxqt.sh && chmod +x ubuntu-lxqt.sh && bash ubuntu-lxqt.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optiong == 4 || $optiong == 04 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu/ubuntu.sh && chmod +x ubuntu.sh && bash ubuntu.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 else # For Optiong
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -117,11 +162,19 @@ if [[ $optiond == 1 || $optiond == 01 ]]; then
 printf "\n\n\e[1;92mUninstalling ...\n\e[0m"
 sleep 3
 pkg install wget -y && wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Uninstall/Ubuntu/UNI-ubuntu.sh && bash UNI-ubuntu.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optiond == 2 || $optiond == 02 ]]; then
 printf "\n\n\e[1;92mUninstalling ...\n\e[0m"
 sleep 3
 pkg install wget -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Uninstall/Ubuntu19/UNI-ubuntu19.sh && chmod +x UNI-ubuntu19.sh && ./UNI-ubuntu19.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 else # For Optiond
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -153,15 +206,31 @@ sleep 3
 
 if [[ $optionf == 1 || $optionf == 01 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali-xfce.sh  && chmod +x kali-xfce.sh && bash kali-xfce.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optionf == 2 || $optionf == 02 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali-lxde.sh && chmod +x kali-lxde.sh && bash kali-lxde.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optionf == 3 || $optionf == 03 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali-lxqt.sh && chmod +x kali-lxqt.sh && bash kali-lxqt.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optionf == 4 || $optionf == 04 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali.sh && chmod +x kali.sh && bash kali.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 else # Optionf
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -174,6 +243,10 @@ elif [[ $optione == 2 || $optione == 02 ]]; then
 printf "\n\n\e[1;92mUninstalling ...\n\e[0m"
 sleep 3
 wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Uninstall/Kali/UNI-kali.sh && bash UNI-kali.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 else # For Optione
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -200,15 +273,31 @@ read -p $'\n\nWhich Desktop Environment you want?\n\n\e[1;92m[\e[0m\e[1;77m01\e[
 
 if [[ $optioni == 1 || $optioni == 01 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Debian/debian-xfce.sh && chmod +x debian-xfce.sh &&  bash debian-xfce.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optioni == 2 || $optioni == 02 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Debian/debian-lxde.sh && chmod +x debian-lxde.sh bash debian-lxde.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optioni == 3 || $optioni == 03 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Debian/debian-lxqt.sh && chmod +x debian-lxqt.sh bash debian-lxqt.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optioni == 4 || $optioni == 04 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Debian/debian.sh && chmod +x debian.sh && bash debian.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 else # For Optioni
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -219,6 +308,10 @@ elif [[ $optionh == 2 || $optionh == 02 ]]; then
 printf "\e[1;92m\nUninstalling ...\n\e[0m"
 sleep 3
 wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Uninstall/Debian/UNI-debian.sh && bash UNI-debian.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 else # For Optionh
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -243,12 +336,24 @@ read -p $'\n\nWhich Desktop Environment you want?\n\n\e[1;92m[\e[0m\e[1;77m01\e[
 
 if [[ $optionk == 1 || $optionk == 01 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-xfce.sh && chmod +x arch-xfce.sh &&bash arch-xfce.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optionk == 2 || $optionk == 02 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-lxde.sh && chmod +x arch-lxde.sh && bash arch-lxde.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optionk == 3 || $optionk == 03 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch.sh && chmod +x arch.sh && bash arch.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 else # For Optionk
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -259,6 +364,10 @@ elif [[ $optionj == 2 || $optionj == 02 ]]; then
 printf "\e[1;92m\nUninstalling ...\n\e[0m"
 sleep 3
 wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Uninstall/Arch/UNI-arch.sh && bash UNI-arch.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 else # For Optionj
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -283,15 +392,31 @@ read -p $'\n\nWhich Desktop Environment you want?\n\n\e[1;92m[\e[0m\e[1;77m01\e[
 
 if [[ $optionm == 1 || $optionm == 01 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Manjaro/manjaro-xfce.sh && chmod +x manjaro-xfce.sh && bash manjaro-xfce.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optionm == 2 || $optionm == 02 ]]; then
 pkg update -y && pkg install wget curl proot tar -y  && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Manjaro/manjaro-lxde.sh && chmod +x manjaro-lxde.sh && bash manjaro-lxde.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optionm == 3 || $optionm == 03 ]]; then
 pkg update -y && pkg install wget curl proot tar -y  && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Manjaro/manjaro-lxqt.sh && chmod +x manjaro-lxqt.sh && bash manjaro-lxqt.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 elif [[ $optionm == 4 || $optionm == 04 ]]; then
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Manjaro/manjaro.sh && chmod +x manjaro.sh && bash manjaro.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 else # For Optionm
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -302,6 +427,10 @@ elif [[ $optionl == 2 || $optionl == 02 ]]; then
 printf "\e[1;92m\nUninstalling ...\n\e[0m" 
 sleep 3
 wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Uninstall/Manjaro/UNI-manjaro.sh && bash UNI-manjaro.sh
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
 
 else # For Optionl
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -340,11 +469,16 @@ qemu-system-i386 -hda Windows_7.qcow2 -vnc 127.0.0.1:1
 printf "\n\n\e[1;92m Next time if you want to start WIndows 7 just give the below command:\n\n   qemu-system-i386 -hda Deskify/Windows_7.qcow2 -vnc 127.0.0.1:1"
 sleep 4
 printf "\n\nFor more help ask at Telegram Group: \e[1;96mhttp://t.me/linux_repo\e[1;92m\n\n"
-sleep 2
+sleep 1
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 1
+banner
+menu
 
 elif [[ $optionn == 2 || $optionn == 02 ]]; then
 printf "\e[1;92m\nUninstalling ...\n\e[0m"
 sleep 2
+pkg uninstall qemu-system-i386-headless
 rm -rf Windows_7.qcow2
 
 else # For Optionn
@@ -353,6 +487,7 @@ sleep 1
 fi
 
 elif [[ $option == 10 ]]; then
+banner2
 printf "\n\n\e[1;92m All tutorials, help, details and supports in Telegram Group: \e[1;96mhttp://t.me/linux_repo\e[1;92m\n"
 sleep 5
 menu
@@ -360,8 +495,54 @@ menu
 elif [[ $option == 0 || $option == 00 ]]; then
 printf "\n\e[1;92mJoin Telegram Group (\e[1;96mhttp://t.me/linux_repo\e[1;92m) for feedback and chat ...\n"
 sleep 1
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 1
 printf "\n\e[1;91mExiting ...\n\e[0m"
 exit 1
+
+elif [[ $option == NS || $option == ns ]]; then
+printf "\n\e[1;92m[\e[1;93m01\e[1;92m] Install          \e[1;92m[\e[1;93m02\e[1;92m] Uninstall\n"
+read -p $'\n\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[1;93m Choose an option: \e[1;92m' optionp
+
+if [[ $optionp == 1 || $optionp == 01 ]]; then
+printf "\n\nInstalling "
+sleep 0.3
+printf "."
+sleep 0.3
+printf "."
+sleep 0.3
+printf ".\n"
+sleep 2
+apt install nsnake -y
+printf "\n\nStarting Game "
+sleep 0.3
+printf "."
+sleep 0.3
+printf "."
+sleep 0.3
+printf ".\n"
+sleep 2
+nsnake
+printf "\n\n\e[1;92mTelegram Group: \e[1;96mhttp://t.me/linux_repo\e[0m"
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
+
+elif [[ $optionp == 2 || $optionp == 02 ]]; then
+printf "\e[1;92m\nUninstalling ...\n\e[0m"
+sleep 2
+apt uninstall nsnake -y
+printf "\n\n\e[1;92mTelegram Group: \e[1;96mhttp://t.me/linux_repo\e[0m"
+sleep 2
+printf "\n\n\e[1;93mDonate me and become a VIP for me!\n  \e[1;95mPayPal: \e[1;96mhttps://paypal.me/AbirHasan2005\e[0m\n"
+sleep 2
+menu
+
+else # For Optionp
+printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
+sleep 1
+fi
 
 else # For Option
 printf "\n\e[1;93m [\e[1;91m!\e[1;93m] Invalid option!\n\n\e[1;92mFor any kind of help join Telegram Group: \e[4;96mhttp://t.me/linux_repo\e[0m\n"
@@ -369,4 +550,6 @@ sleep 1
 fi
 
 }
+
+banner
 menu
